@@ -1,0 +1,6 @@
+altair
+streamlit
+pandas
+os
+io
+plotly.graph_objects
