@@ -53,7 +53,7 @@ if uploaded_file:
             ts_inicio = df['start'].iloc[-1] # Pega o primeiro timestamp do dataframe
             ts_ini_dia = ts_inicio.normalize() # Normaliza o timestamp para o inicio do dia
 
-            ts_fim = df['end'].iloc[0] # Pega o ultimo timestamp do dataframe
+            ts_fim = df['start'].iloc[0] # Pega o ultimo timestamp do dataframe
             ts_fim_dia = (ts_fim.normalize()) + pd.Timedelta(hours=24) # Normaliza o timestamp para o inicio do dia e soma 24 horas
 
             ts_delta = ts_fim_dia - ts_ini_dia # Calcula o intervalo entre os dois timestamps (= periodo total)
